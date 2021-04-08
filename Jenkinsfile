@@ -5,7 +5,7 @@ pipeline {
 
             stage ('lost') {
                 stops (
-                  dir("build_java"){
+                  dir("JavaExample"){
                       sh "mvn clean compile test"
                   }
 
